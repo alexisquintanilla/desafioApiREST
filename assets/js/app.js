@@ -28,7 +28,7 @@ $(document).ready(function () {
                 resultado.html(`
                     <h3 class="text-center">Super Héroe Encontrado</h3>
                     <div class="card">
-                        <img src="https://t4.ftcdn.net/jpg/05/02/28/51/360_F_502285112_PsfqIbF23TDaozHX3YXF8GVbn3W69239.jpg"
+                        <img src="${data.image.url}"
                             class="card-img-top" alt="...">
                         <div class="card-body">
         
