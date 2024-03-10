@@ -26,32 +26,37 @@ $(document).ready(function () {
                 ]
                 // impresion en dom de la biografia del heroe
                 resultado.html(`
-                    <h3 class="text-center">Super Héroe Encontrado</h3>
-                    <div class="card">
-                        <img src="${data.image.url}"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-        
-                            <h5 class="card-title">Nombre : ${data.name}</h5>
-                            <p class="card-text">Conexiones: ${data.connections["group-affiliation"]}
-                              ${data.connections["relatives"]}</p>
-                            <div class="ms-4">
-                                <p class="my-2">Publicado por : ${data.biography.publisher} </p>
-                                <hr class="my-0">
-                                <p>Ocupación : ${data.work.occupation}</p>
-                                <hr class="my-0">
-                                <p>Primera Aparición : ${data.biography["first-appearance"]}</p>
-                                <hr class="my-0">
-                                <p>Altura : ${data.appearance.height}</p>
-                                <hr class="my-0">
-                                <p>Peso : ${data.appearance.weight}</p>
-                                <hr class="my-0">
-                                <p>Alianza : ${data.biography.aliases}</p>
-        
+                <h3 class="text-center">Super Héroe Encontrado</h3>
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="${data.image.url}"
+                                class="img-fluid rounded-start" alt="Imagen de la tarjeta">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+
+                                <h5 class="card-title">Nombre : ${data.name}</h5>
+                                <p class="card-text">Conexiones: ${data.connections["group-affiliation"]}
+                                ${data.connections["relatives"]}</p>
+                                <div class="ms-4">
+                                    <p>Publicado por: ${data.biography.publisher}</p>
+                                    <hr>
+                                    <p>Ocupación : ${data.work.occupation}</p>
+                                    <hr>
+                                    <p>Primera Aparición : ${data.biography["first-appearance"]}</p>
+                                    <hr>
+                                    <p>Altura: ${data.appearance.height}</p>
+                                    <hr>
+                                    <p>Peso: ${data.appearance.weight}</p>
+                                    <hr>
+                                    <p>Alianza: ${data.biography.aliases}</p>
+
+                                </div>
                             </div>
-        
                         </div>
                     </div>
+
 
                              
                 `)
